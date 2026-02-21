@@ -26,12 +26,7 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-3">
           <div>
             <Link to="/" className="inline-block">
-              <span className="font-heading text-xl font-semibold" style={{ color: '#C9A84C' }}>
-                R&L
-              </span>
-              <span className="ml-1.5 text-sm font-medium tracking-widest" style={{ color: '#F5F0E8' }}>
-                CUSTOM CABINETS
-              </span>
+              <img src="/logos/rl-logo.svg" alt="R&L Custom Cabinets" className="h-16 md:h-20" />
             </Link>
             <p className="mt-3 text-sm" style={{ color: '#A39E93' }}>
               Handcrafted Excellence. Rooted in Tradition.

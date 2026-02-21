@@ -58,13 +58,8 @@ export default function Navbar() {
       }}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-6">
-        <Link to="/" className="flex items-baseline gap-1.5">
-          <span className="font-heading text-2xl font-semibold" style={{ color: '#C9A84C' }}>
-            R&L
-          </span>
-          <span className="font-sans text-sm font-medium tracking-widest" style={{ color: '#F5F0E8' }}>
-            CUSTOM CABINETS
-          </span>
+        <Link to="/">
+          <img src="/logos/rl-logo-navbar.svg" alt="R&L Custom Cabinets" className="h-10 md:h-12" />
         </Link>
 
         {/* Desktop nav */}

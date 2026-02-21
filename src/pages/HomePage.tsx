@@ -76,6 +76,7 @@ export default function HomePage() {
           animate="visible"
           className="relative z-10 max-w-4xl"
         >
+          <img src="/logos/rl-logo-full.svg" alt="R&L Custom Cabinets" className="h-24 md:h-32 mx-auto mb-6" />
           <motion.h1
             variants={item}
             className="font-heading text-4xl font-semibold leading-tight tracking-tight md:text-5xl lg:text-6xl"
