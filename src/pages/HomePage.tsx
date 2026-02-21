@@ -67,7 +67,7 @@ export default function HomePage() {
       >
         <div
           className="absolute inset-0"
-          style={{ background: 'rgba(0, 0, 0, 0.55)' }}
+          style={{ background: 'rgba(0, 0, 0, 0.70)' }}
           aria-hidden
         />
         <motion.div
@@ -76,11 +76,11 @@ export default function HomePage() {
           animate="visible"
           className="relative z-10 max-w-4xl"
         >
-          <img src="/logos/rl-logo-full.svg" alt="R&L Custom Cabinets" className="h-24 md:h-32 mx-auto mb-6" />
+          <img src="/logos/rl-logo-full.svg" alt="R&L Custom Cabinets" className="mx-auto mb-4 h-20 md:h-28 lg:h-32" />
           <motion.h1
             variants={item}
-            className="font-heading text-4xl font-semibold leading-tight tracking-tight md:text-5xl lg:text-6xl"
-            style={{ color: '#F5F0E8' }}
+            className="font-heading text-4xl font-bold leading-tight tracking-tight md:text-5xl lg:text-6xl"
+            style={{ color: '#F5F0E8', textShadow: '0 2px 20px rgba(0,0,0,0.5)' }}
           >
             Handcrafted Cabinets. Timeless Design.
           </motion.h1>
