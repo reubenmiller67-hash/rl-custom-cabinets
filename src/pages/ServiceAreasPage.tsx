@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { serviceAreas } from '../data/serviceAreas'
+import GoldDivider from '../components/ui/GoldDivider'
 
 const tier1Slugs = ['coldwater', 'sturgis', 'three-rivers', 'hillsdale', 'union-city']
 const tier2Slugs = ['kalamazoo', 'battle-creek', 'south-bend', 'elkhart', 'goshen', 'marshall']
@@ -55,6 +56,8 @@ export default function ServiceAreasPage() {
         </div>
       </section>
 
+      <GoldDivider className="my-16" />
+
       <section className="px-4 pb-16 md:px-6 md:pb-24">
         <div className="mx-auto max-w-6xl space-y-16">
           <motion.div
@@ -80,6 +83,8 @@ export default function ServiceAreasPage() {
           </motion.div>
         </div>
       </section>
+
+      <GoldDivider className="my-16" />
 
       <section className="border-t px-4 py-16 md:px-6" style={{ borderColor: '#333333', backgroundColor: '#1A1A1A' }}>
         <div className="mx-auto max-w-2xl text-center">

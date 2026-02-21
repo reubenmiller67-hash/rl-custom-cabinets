@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import PlaceholderImage from '../components/ui/PlaceholderImage'
+import GoldDivider from '../components/ui/GoldDivider'
 
 const filters = ['All', 'Modern', 'Traditional', 'Transitional', 'Raised Panel', 'Flat Panel', 'Shaker']
 
@@ -62,6 +63,8 @@ export default function DoorStylesPage() {
               </button>
             ))}
           </div>
+
+          <GoldDivider className="my-12" />
 
           <div className="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {filtered.map((style, i) => (

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import PlaceholderImage from '../components/ui/PlaceholderImage'
+import GoldDivider from '../components/ui/GoldDivider'
 
 const services = [
   { id: 'kitchens', title: 'Custom Kitchens', desc: 'Full kitchen design and installation. Cabinets built to your exact layout and style.' },
@@ -37,6 +38,8 @@ export default function ResidentialPage() {
         </div>
       </section>
 
+      <GoldDivider className="my-16" />
+
       <section className="px-4 py-16 md:px-6 md:py-24">
         <div className="mx-auto max-w-7xl">
           <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
@@ -72,6 +75,8 @@ export default function ResidentialPage() {
           </div>
         </div>
       </section>
+
+      <GoldDivider className="my-16" />
 
       <section className="border-t px-4 py-16 md:px-6" style={{ borderColor: '#333333', backgroundColor: '#1A1A1A' }}>
         <div className="mx-auto max-w-3xl text-center">

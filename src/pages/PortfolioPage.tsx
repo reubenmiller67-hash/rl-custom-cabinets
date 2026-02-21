@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import PlaceholderImage from '../components/ui/PlaceholderImage'
+import GoldDivider from '../components/ui/GoldDivider'
 
 const filters = ['All', 'Kitchens', 'Bathrooms', 'Commercial', 'Built-ins']
 
@@ -81,6 +82,8 @@ export default function PortfolioPage() {
           </div>
         </div>
       </section>
+
+      <GoldDivider className="my-16" />
 
       <section className="border-t px-4 py-16 md:px-6" style={{ borderColor: '#333333', backgroundColor: '#1A1A1A' }}>
         <div className="mx-auto max-w-3xl text-center">

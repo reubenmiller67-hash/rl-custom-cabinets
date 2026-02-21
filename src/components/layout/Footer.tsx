@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import GoldDivider from '../ui/GoldDivider'
 
 const quickLinks = [
   { label: 'Residential', path: '/residential' },
@@ -22,7 +23,7 @@ export default function Footer() {
   return (
     <footer className="border-t" style={{ backgroundColor: '#0D0D0D', borderColor: '#333333' }}>
       <div className="mx-auto max-w-7xl px-4 py-12 md:px-6">
-        <div className="mb-8 h-px w-full" style={{ backgroundColor: '#C9A84C' }} />
+        <GoldDivider className="mb-12" width="max-w-lg" />
         <div className="grid gap-10 md:grid-cols-3">
           <div>
             <Link to="/" className="inline-block">

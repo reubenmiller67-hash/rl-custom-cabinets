@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore'
 import { db } from '../lib/firebase'
 import PlaceholderImage from '../components/ui/PlaceholderImage'
+import GoldDivider from '../components/ui/GoldDivider'
 
 export default function ContactPage() {
   const [name, setName] = useState('')
@@ -156,6 +157,8 @@ export default function ContactPage() {
               </p>
             </motion.div>
           </div>
+
+          <GoldDivider className="my-16" />
 
           <motion.div
             initial={{ opacity: 0, y: 24 }}

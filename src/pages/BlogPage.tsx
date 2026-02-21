@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { collection, getDocs, query, orderBy } from 'firebase/firestore'
 import { db } from '../lib/firebase'
 import { getPublishedBlogPosts } from '../data/blogPosts'
+import GoldDivider from '../components/ui/GoldDivider'
 
 interface Post {
   id: string
@@ -80,6 +81,8 @@ export default function BlogPage() {
           >
             Tips, inspiration, and news from R&L Custom Cabinets
           </motion.p>
+
+          <GoldDivider className="my-16" />
 
           {loading ? (
             <p className="mt-12" style={{ color: '#6B6560' }}>Loading...</p>

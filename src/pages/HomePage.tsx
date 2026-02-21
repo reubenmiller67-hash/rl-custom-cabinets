@@ -4,6 +4,7 @@ import { HiChevronDown } from 'react-icons/hi'
 import { FiCheckSquare, FiUsers, FiMapPin, FiTool } from 'react-icons/fi'
 import { IoStar } from 'react-icons/io5'
 import PlaceholderImage from '../components/ui/PlaceholderImage'
+import GoldDivider from '../components/ui/GoldDivider'
 
 const container = {
   hidden: { opacity: 0 },
@@ -118,6 +119,8 @@ export default function HomePage() {
         </motion.div>
       </section>
 
+      <GoldDivider className="my-16" width="max-w-lg" />
+
       {/* Dual Path */}
       <section className="px-4 py-20 md:px-6 lg:py-28" style={{ backgroundColor: '#0D0D0D' }}>
         <div className="mx-auto max-w-7xl">
@@ -176,6 +179,8 @@ export default function HomePage() {
         </div>
       </section>
 
+      <GoldDivider className="my-16" width="max-w-lg" />
+
       {/* Why R&L */}
       <section className="px-4 py-20 md:px-6 lg:py-28" style={{ backgroundColor: '#1A1A1A' }}>
         <div className="mx-auto max-w-7xl">
@@ -211,6 +216,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <GoldDivider className="my-16" width="max-w-lg" />
 
       {/* Featured Work */}
       <section className="px-4 py-20 md:px-6 lg:py-28" style={{ backgroundColor: '#0D0D0D' }}>
@@ -268,6 +275,8 @@ export default function HomePage() {
         </div>
       </section>
 
+      <GoldDivider className="my-16" width="max-w-lg" />
+
       {/* Process Preview */}
       <section className="px-4 py-20 md:px-6 lg:py-28" style={{ backgroundColor: '#1A1A1A' }}>
         <div className="mx-auto max-w-7xl">
@@ -306,6 +315,8 @@ export default function HomePage() {
         </div>
       </section>
 
+      <GoldDivider className="my-16" width="max-w-lg" />
+
       {/* Testimonials */}
       <section className="px-4 py-20 md:px-6 lg:py-28" style={{ backgroundColor: '#0D0D0D' }}>
         <div className="mx-auto max-w-7xl">
@@ -343,6 +354,8 @@ export default function HomePage() {
         </div>
       </section>
 
+      <GoldDivider className="my-16" width="max-w-lg" />
+
       {/* CTA */}
       <section className="px-4 py-20 md:px-6 lg:py-28" style={{ backgroundColor: '#1A1A1A' }}>
         <motion.div
@@ -369,6 +382,8 @@ export default function HomePage() {
           </p>
         </motion.div>
       </section>
+
+      <GoldDivider className="my-16" width="max-w-lg" />
 
       {/* Service Areas Preview */}
       <section className="px-4 py-20 md:px-6 lg:py-28" style={{ backgroundColor: '#0D0D0D' }}>

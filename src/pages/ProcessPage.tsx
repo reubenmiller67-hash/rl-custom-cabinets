@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import PlaceholderImage from '../components/ui/PlaceholderImage'
+import GoldDivider from '../components/ui/GoldDivider'
 
 const steps = [
   {
@@ -50,6 +51,8 @@ export default function ProcessPage() {
         </div>
       </section>
 
+      <GoldDivider className="my-16" />
+
       <section className="px-4 pb-16 md:px-6 md:pb-24">
         <div className="mx-auto max-w-4xl">
           {steps.map((step, i) => (
@@ -83,6 +86,8 @@ export default function ProcessPage() {
         </div>
       </section>
 
+      <GoldDivider className="my-16" />
+
       <section className="px-4 py-12 md:px-6" style={{ backgroundColor: '#1A1A1A' }}>
         <div className="mx-auto max-w-2xl text-center">
           <p className="font-heading text-lg font-medium" style={{ color: '#C9A84C' }}>
@@ -90,6 +95,8 @@ export default function ProcessPage() {
           </p>
         </div>
       </section>
+
+      <GoldDivider className="my-16" />
 
       <section className="border-t px-4 py-16 md:px-6" style={{ borderColor: '#333333' }}>
         <div className="mx-auto max-w-3xl text-center">

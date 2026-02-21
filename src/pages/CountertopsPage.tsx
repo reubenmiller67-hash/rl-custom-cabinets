@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import PlaceholderImage from '../components/ui/PlaceholderImage'
+import GoldDivider from '../components/ui/GoldDivider'
 
 const materials = [
   {
@@ -65,9 +66,13 @@ export default function CountertopsPage() {
         </div>
       </section>
 
+      <GoldDivider className="my-16" />
+
       <section className="px-4 pb-16 md:px-6 md:pb-24">
         <div className="mx-auto max-w-6xl space-y-20">
           {materials.map((mat, idx) => (
+            <div key={mat.id}>
+              {idx > 0 && <GoldDivider className="my-16" />}
             <motion.article
               key={mat.id}
               initial={{ opacity: 0, y: 24 }}
@@ -97,9 +102,12 @@ export default function CountertopsPage() {
                 ))}
               </ul>
             </motion.article>
+            </div>
           ))}
         </div>
       </section>
+
+      <GoldDivider className="my-16" />
 
       <section className="border-t px-4 py-16 md:px-6" style={{ borderColor: '#333333', backgroundColor: '#1A1A1A' }}>
         <div className="mx-auto max-w-3xl text-center">
