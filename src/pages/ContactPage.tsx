@@ -68,15 +68,19 @@ export default function ContactPage() {
               <p className="mt-2" style={{ color: '#6B6560' }}>
                 Serving Southern Michigan & Northern Indiana
               </p>
-              <p className="mt-4" style={{ color: '#6B6560' }}>
-                Phone: (XXX) XXX-XXXX
-              </p>
               <a
-                href="mailto:info@rlcustomcabinets.com"
+                href="tel:5172279490"
+                className="mt-4 block transition-colors hover:text-[#C9A84C]"
+                style={{ color: '#6B6560' }}
+              >
+                Phone: (517) 227-9490
+              </a>
+              <a
+                href="mailto:rlcustomcabinets67@gmail.com"
                 className="mt-2 block transition-colors hover:text-[#C9A84C]"
                 style={{ color: '#6B6560' }}
               >
-                info@rlcustomcabinets.com
+                rlcustomcabinets67@gmail.com
               </a>
               <p className="mt-6 text-sm" style={{ color: '#6B6560' }}>
                 Hours: By appointment

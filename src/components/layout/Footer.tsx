@@ -54,15 +54,19 @@ export default function Footer() {
             <p className="mt-2 text-sm" style={{ color: '#A39E93' }}>
               Serving Southern Michigan & Northern Indiana
             </p>
-            <p className="mt-1 text-sm" style={{ color: '#6B6560' }}>
-              (XXX) XXX-XXXX
-            </p>
             <a
-              href="mailto:info@rlcustomcabinets.com"
+              href="tel:5172279490"
               className="mt-1 block text-sm transition-colors hover:text-[#C9A84C]"
               style={{ color: '#6B6560' }}
             >
-              info@rlcustomcabinets.com
+              (517) 227-9490
+            </a>
+            <a
+              href="mailto:rlcustomcabinets67@gmail.com"
+              className="mt-1 block text-sm transition-colors hover:text-[#C9A84C]"
+              style={{ color: '#6B6560' }}
+            >
+              rlcustomcabinets67@gmail.com
             </a>
           </div>
           <div>

@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import PlaceholderImage from '../components/ui/PlaceholderImage'
 import GoldDivider from '../components/ui/GoldDivider'
 
-const stats = ['Full-Scale Production Facility', 'XX+ Projects Completed', 'On-Time Delivery']
+const stats = ['Full-Scale Production Facility', 'On-Time Delivery']
 
 const serviceCards = [
   { id: 'apartments', title: 'Apartments & Multi-Family', desc: 'Consistent, durable cabinetry for units at scale. Phased delivery and installation.' },
@@ -40,7 +40,7 @@ export default function CommercialPage() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="mt-10 flex flex-wrap justify-center gap-8 border-y py-6"
+            className="mt-10 flex flex-wrap justify-center gap-12 md:gap-24 border-y py-6"
             style={{ borderColor: '#333333' }}
           >
             {stats.map((s) => (

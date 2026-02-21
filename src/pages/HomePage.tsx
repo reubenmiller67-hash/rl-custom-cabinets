@@ -403,7 +403,10 @@ export default function HomePage() {
             Get Your Free Quote
           </Link>
           <p className="mt-6 text-sm" style={{ color: '#6B6560' }}>
-            Or call us: (XXX) XXX-XXXX
+            Or call us:{' '}
+            <a href="tel:5172279490" className="transition-colors hover:text-[#C9A84C]" style={{ color: '#F5F0E8' }}>
+              (517) 227-9490
+            </a>
           </p>
         </motion.div>
       </section>
