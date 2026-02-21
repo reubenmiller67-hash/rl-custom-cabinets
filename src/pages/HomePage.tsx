@@ -58,17 +58,23 @@ export default function HomePage() {
     <>
       {/* Hero */}
       <section
-        className="relative flex min-h-screen flex-col items-center justify-center px-4 text-center"
+        className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-4 text-center"
         style={{
-          background: 'linear-gradient(180deg, #0D0D0D 0%, #1A1A1A 100%)',
-          backgroundImage: 'radial-gradient(ellipse at 50% 0%, rgba(201, 168, 76, 0.06) 0%, transparent 50%), linear-gradient(180deg, #0D0D0D 0%, #1A1A1A 100%)',
+          backgroundImage: 'url(/hero-kitchen.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
         }}
       >
+        <div
+          className="absolute inset-0"
+          style={{ background: 'rgba(0, 0, 0, 0.55)' }}
+          aria-hidden
+        />
         <motion.div
           variants={container}
           initial="hidden"
           animate="visible"
-          className="max-w-4xl"
+          className="relative z-10 max-w-4xl"
         >
           <motion.h1
             variants={item}
@@ -105,7 +111,7 @@ export default function HomePage() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2"
+          className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2"
         >
           <HiChevronDown className="h-8 w-8 animate-bounce" style={{ color: '#C9A84C' }} />
         </motion.div>
