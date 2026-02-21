@@ -124,7 +124,7 @@ export default function AboutPage() {
             viewport={{ once: true }}
             className="mt-10"
           >
-            <PlaceholderImage className="min-h-[300px] w-full" />
+            <PlaceholderImage src="/images/about/production-facility.jpg" alt="R&L Custom Cabinets production facility" className="min-h-[300px] w-full" />
           </motion.div>
         </div>
       </section>

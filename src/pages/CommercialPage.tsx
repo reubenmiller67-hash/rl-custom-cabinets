@@ -6,10 +6,10 @@ import GoldDivider from '../components/ui/GoldDivider'
 const stats = ['Full-Scale Production Facility', 'On-Time Delivery']
 
 const serviceCards = [
-  { id: 'apartments', title: 'Apartments & Multi-Family', desc: 'Consistent, durable cabinetry for units at scale. Phased delivery and installation.' },
-  { id: 'hotels', title: 'Hotels & Hospitality', desc: 'Guest rooms, lobbies, and back-of-house cabinetry built to hospitality standards.' },
-  { id: 'senior-living', title: 'Senior Living', desc: 'Accessible, durable solutions for independent and assisted living communities.' },
-  { id: 'office', title: 'Office Spaces', desc: 'Reception, break rooms, and workspace cabinetry for commercial buildings.' },
+  { id: 'apartments', title: 'Apartments & Multi-Family', desc: 'Consistent, durable cabinetry for units at scale. Phased delivery and installation.', image: '/images/commercial/apartment-kitchen.jpg', alt: 'Apartment kitchen cabinetry' },
+  { id: 'hotels', title: 'Hotels & Hospitality', desc: 'Guest rooms, lobbies, and back-of-house cabinetry built to hospitality standards.', image: '/images/commercial/hotel-room.jpg', alt: 'Hotel room cabinetry' },
+  { id: 'senior-living', title: 'Senior Living', desc: 'Accessible, durable solutions for independent and assisted living communities.', image: '/images/commercial/senior-living.jpg', alt: 'Senior living cabinetry' },
+  { id: 'office', title: 'Office Spaces', desc: 'Reception, break rooms, and workspace cabinetry for commercial buildings.', image: '/images/commercial/office-space.jpg', alt: 'Office cabinetry' },
 ]
 
 const processSteps = ['Bid', 'Shop Drawings', 'Production', 'Phased Delivery', 'Installation']
@@ -77,7 +77,7 @@ export default function CommercialPage() {
                 className="overflow-hidden rounded-lg border"
                 style={{ backgroundColor: '#242424', borderColor: '#333333' }}
               >
-                <PlaceholderImage className="min-h-[200px]" />
+                <PlaceholderImage src={card.image} alt={card.alt} className="min-h-[200px]" />
                 <div className="border-t p-6" style={{ borderColor: '#333333' }}>
                   <h3 className="font-heading text-xl font-semibold" style={{ color: '#F5F0E8' }}>
                     {card.title}

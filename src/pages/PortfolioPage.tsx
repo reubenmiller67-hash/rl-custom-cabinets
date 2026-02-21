@@ -62,7 +62,7 @@ export default function PortfolioPage() {
                 style={{ backgroundColor: '#242424' }}
               >
                 <div className="relative min-h-[240px]">
-                  <PlaceholderImage className="min-h-[240px] w-full" />
+                  <PlaceholderImage src={`/images/portfolio/project-${proj.id}.jpg`} alt={proj.name} className="min-h-[240px] w-full" />
                   <div
                     className="absolute inset-0 flex flex-col items-center justify-center bg-[#C9A84C]/20 opacity-0 transition-opacity group-hover:opacity-100"
                     style={{ color: '#0D0D0D' }}

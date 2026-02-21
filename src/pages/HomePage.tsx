@@ -158,7 +158,7 @@ export default function HomePage() {
               className="overflow-hidden rounded-lg border transition-colors"
               style={{ backgroundColor: '#242424', borderColor: '#333333' }}
             >
-              <PlaceholderImage className="min-h-[280px]" />
+              <PlaceholderImage src="/images/residential-hero.jpg" alt="Custom residential kitchen cabinetry" className="min-h-[280px]" />
               <div className="p-8">
                 <h2 className="font-heading text-2xl font-semibold" style={{ color: '#C9A84C' }}>
                   RESIDENTIAL
@@ -183,7 +183,7 @@ export default function HomePage() {
               className="overflow-hidden rounded-lg border transition-colors"
               style={{ backgroundColor: '#242424', borderColor: '#333333' }}
             >
-              <PlaceholderImage className="min-h-[280px]" />
+              <PlaceholderImage src="/images/commercial-hero.jpg" alt="Commercial multi-unit cabinetry" className="min-h-[280px]" />
               <div className="p-8">
                 <h2 className="font-heading text-2xl font-semibold" style={{ color: '#C9A84C' }}>
                   COMMERCIAL & MULTI-UNIT
@@ -268,7 +268,7 @@ export default function HomePage() {
                 style={{ backgroundColor: '#242424' }}
               >
                 <div className="relative min-h-[220px]">
-                  <PlaceholderImage className="min-h-[220px] w-full" />
+                  <PlaceholderImage src={`/images/portfolio/project-${i + 1}.jpg`} alt={proj.name} className="min-h-[220px] w-full" />
                   <div
                     className="absolute inset-0 flex flex-col items-center justify-center bg-[#C9A84C]/20 opacity-0 transition-opacity group-hover:opacity-100"
                     style={{ color: '#0D0D0D' }}

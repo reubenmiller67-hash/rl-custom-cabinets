@@ -4,26 +4,11 @@ import PlaceholderImage from '../components/ui/PlaceholderImage'
 import GoldDivider from '../components/ui/GoldDivider'
 
 const steps = [
-  {
-    title: 'Free Consultation',
-    desc: 'Meet directly with the owner for a free in-home or virtual design consultation. We\'ll discuss your vision, take measurements, and start planning your project — no salespeople, no middlemen.',
-  },
-  {
-    title: 'Design & Selection',
-    desc: 'Using professional 3D design software, we\'ll create detailed renderings of your project so you can see exactly what your space will look like. Select door styles, finishes, hardware, and countertops with confidence before we build a single cabinet.',
-  },
-  {
-    title: 'Crafting',
-    desc: 'Every cabinet is built in our full-scale production facility by skilled craftsmen with deep roots in the region\'s woodworking tradition. We combine precision CNC technology with traditional handcraft techniques, and every piece goes through rigorous quality checkpoints before it leaves our shop.',
-  },
-  {
-    title: 'Installation',
-    desc: 'Our professional crew installs your cabinetry. We keep the worksite clean and pay attention to every detail so the result is seamless.',
-  },
-  {
-    title: 'Final Walkthrough',
-    desc: 'We inspect the finished project with you, ensure everything is perfect, and review care and warranty so you can enjoy your new space for generations.',
-  },
+  { title: 'Free Consultation', desc: 'Meet directly with the owner for a free in-home or virtual design consultation. We\'ll discuss your vision, take measurements, and start planning your project — no salespeople, no middlemen.', image: '/images/process/consultation.jpg', alt: 'Design consultation' },
+  { title: 'Design & Selection', desc: 'Using professional 3D design software, we\'ll create detailed renderings of your project so you can see exactly what your space will look like. Select door styles, finishes, hardware, and countertops with confidence before we build a single cabinet.', image: '/images/process/design.jpg', alt: '3D kitchen design' },
+  { title: 'Crafting', desc: 'Every cabinet is built in our full-scale production facility by skilled craftsmen with deep roots in the region\'s woodworking tradition. We combine precision CNC technology with traditional handcraft techniques, and every piece goes through rigorous quality checkpoints before it leaves our shop.', image: '/images/process/crafting.jpg', alt: 'Cabinet craftsmanship' },
+  { title: 'Installation', desc: 'Our professional crew installs your cabinetry. We keep the worksite clean and pay attention to every detail so the result is seamless.', image: '/images/process/installation.jpg', alt: 'Cabinet installation' },
+  { title: 'Final Walkthrough', desc: 'We inspect the finished project with you, ensure everything is perfect, and review care and warranty so you can enjoy your new space for generations.', image: '/images/process/walkthrough.jpg', alt: 'Final walkthrough' },
 ]
 
 export default function ProcessPage() {
@@ -78,7 +63,7 @@ export default function ProcessPage() {
                   {step.desc}
                 </p>
                 <div className="mt-6">
-                  <PlaceholderImage className="min-h-[200px] w-full max-w-md" />
+                  <PlaceholderImage src={step.image} alt={step.alt} className="min-h-[200px] w-full max-w-md" />
                 </div>
               </div>
             </motion.article>

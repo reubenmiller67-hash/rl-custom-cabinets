@@ -4,41 +4,11 @@ import PlaceholderImage from '../components/ui/PlaceholderImage'
 import GoldDivider from '../components/ui/GoldDivider'
 
 const materials = [
-  {
-    id: 'granite',
-    name: 'Granite',
-    desc: 'Natural stone with unique patterns and durability. Heat and scratch resistant, and adds lasting value to your home.',
-    benefits: ['Unique natural patterns', 'Heat resistant', 'Long-lasting', 'Adds resale value'],
-    count: 5,
-  },
-  {
-    id: 'quartz',
-    name: 'Quartz',
-    desc: 'Engineered stone that offers consistency in color and pattern. Non-porous, low maintenance, and highly durable.',
-    benefits: ['Non-porous', 'Low maintenance', 'Consistent appearance', 'Stain resistant'],
-    count: 6,
-  },
-  {
-    id: 'marble',
-    name: 'Marble',
-    desc: 'Timeless luxury with distinctive veining. Ideal for those seeking a classic, elegant look.',
-    benefits: ['Elegant veining', 'Classic look', 'Cool to the touch', 'Premium aesthetic'],
-    count: 4,
-  },
-  {
-    id: 'butcher-block',
-    name: 'Butcher Block',
-    desc: 'Warm wood surfaces that bring a natural, inviting feel to your kitchen. Perfect for food prep and casual dining.',
-    benefits: ['Warm aesthetic', 'Can be sanded and refinished', 'Eco-friendly options', 'Food-prep friendly'],
-    count: 4,
-  },
-  {
-    id: 'solid-surface',
-    name: 'Solid Surface',
-    desc: 'Seamless, versatile material that can be molded into integrated sinks and custom shapes. Easy to repair and maintain.',
-    benefits: ['Seamless installation', 'Integrated sinks possible', 'Easy to repair', 'Wide color range'],
-    count: 5,
-  },
+  { id: 'granite', name: 'Granite', desc: 'Natural stone with unique patterns and durability. Heat and scratch resistant, and adds lasting value to your home.', benefits: ['Unique natural patterns', 'Heat resistant', 'Long-lasting', 'Adds resale value'], count: 5, image: '/images/countertops/granite.jpg', alt: 'Granite countertop' },
+  { id: 'quartz', name: 'Quartz', desc: 'Engineered stone that offers consistency in color and pattern. Non-porous, low maintenance, and highly durable.', benefits: ['Non-porous', 'Low maintenance', 'Consistent appearance', 'Stain resistant'], count: 6, image: '/images/countertops/quartz.jpg', alt: 'Quartz countertop' },
+  { id: 'marble', name: 'Marble', desc: 'Timeless luxury with distinctive veining. Ideal for those seeking a classic, elegant look.', benefits: ['Elegant veining', 'Classic look', 'Cool to the touch', 'Premium aesthetic'], count: 4, image: '/images/countertops/marble.jpg', alt: 'Marble countertop' },
+  { id: 'butcher-block', name: 'Butcher Block', desc: 'Warm wood surfaces that bring a natural, inviting feel to your kitchen. Perfect for food prep and casual dining.', benefits: ['Warm aesthetic', 'Can be sanded and refinished', 'Eco-friendly options', 'Food-prep friendly'], count: 4, image: '/images/countertops/butcher-block.jpg', alt: 'Butcher block countertop' },
+  { id: 'solid-surface', name: 'Solid Surface', desc: 'Seamless, versatile material that can be molded into integrated sinks and custom shapes. Easy to repair and maintain.', benefits: ['Seamless installation', 'Integrated sinks possible', 'Easy to repair', 'Wide color range'], count: 5, image: '/images/countertops/solid-surface.jpg', alt: 'Solid surface countertop' },
 ]
 
 export default function CountertopsPage() {
@@ -88,6 +58,9 @@ export default function CountertopsPage() {
               <p className="mt-4" style={{ color: '#A39E93' }}>
                 {mat.desc}
               </p>
+              <div className="mt-8">
+                <PlaceholderImage src={mat.image} alt={mat.alt} className="min-h-[200px] w-full rounded-lg" />
+              </div>
               <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {Array.from({ length: mat.count }).map((_, i) => (
                   <PlaceholderImage key={i} className="min-h-[140px]" />

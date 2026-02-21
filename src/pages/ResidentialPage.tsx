@@ -4,13 +4,13 @@ import PlaceholderImage from '../components/ui/PlaceholderImage'
 import GoldDivider from '../components/ui/GoldDivider'
 
 const services = [
-  { id: 'kitchens', title: 'Custom Kitchens', desc: 'Full kitchen design and installation. Cabinets built to your exact layout and style.' },
-  { id: 'bathrooms', title: 'Bathroom Vanities', desc: 'Vanities and storage that turn your bathroom into a retreat.' },
-  { id: 'closets', title: 'Walk-in Closets', desc: 'Custom closet systems designed for how you live.' },
-  { id: 'built-ins', title: 'Built-in Shelving & Entertainment Centers', desc: 'Wall units, bookcases, and media centers that fit your space perfectly.' },
-  { id: 'home-offices', title: 'Home Offices', desc: 'Desks, shelving, and storage for a productive home office.' },
-  { id: 'laundry', title: 'Laundry Rooms', desc: 'Cabinets and countertops that make laundry day easier.' },
-  { id: 'mudrooms', title: 'Mudrooms & Pantries', desc: 'Organized entry and pantry storage tailored to your needs.' },
+  { id: 'kitchens', title: 'Custom Kitchens', desc: 'Full kitchen design and installation. Cabinets built to your exact layout and style.', image: '/images/residential/kitchen-luxury.jpg', alt: 'Custom kitchen cabinets' },
+  { id: 'bathrooms', title: 'Bathroom Vanities', desc: 'Vanities and storage that turn your bathroom into a retreat.', image: '/images/residential/bathroom-vanity.jpg', alt: 'Custom bathroom vanity' },
+  { id: 'closets', title: 'Walk-in Closets', desc: 'Custom closet systems designed for how you live.', image: '/images/residential/walk-in-closet.jpg', alt: 'Custom walk-in closet' },
+  { id: 'built-ins', title: 'Built-in Shelving & Entertainment Centers', desc: 'Wall units, bookcases, and media centers that fit your space perfectly.', image: '/images/residential/built-in-shelving.jpg', alt: 'Custom built-in shelving' },
+  { id: 'home-offices', title: 'Home Offices', desc: 'Desks, shelving, and storage for a productive home office.', image: '/images/residential/home-office.jpg', alt: 'Custom home office cabinets' },
+  { id: 'laundry', title: 'Laundry Rooms', desc: 'Cabinets and countertops that make laundry day easier.', image: '/images/residential/laundry-room.jpg', alt: 'Custom laundry room cabinets' },
+  { id: 'mudrooms', title: 'Mudrooms & Pantries', desc: 'Organized entry and pantry storage tailored to your needs.', image: '/images/residential/mudroom.jpg', alt: 'Custom mudroom cabinets' },
 ]
 
 export default function ResidentialPage() {
@@ -54,7 +54,7 @@ export default function ResidentialPage() {
                 className="overflow-hidden rounded-lg border"
                 style={{ backgroundColor: '#242424', borderColor: '#333333' }}
               >
-                <PlaceholderImage className="min-h-[200px]" />
+                <PlaceholderImage src={svc.image} alt={svc.alt} className="min-h-[200px]" />
                 <div className="border-t p-6" style={{ borderColor: '#333333' }}>
                   <h2 className="font-heading text-xl font-semibold" style={{ color: '#F5F0E8' }}>
                     {svc.title}
