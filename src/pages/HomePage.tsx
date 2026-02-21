@@ -161,7 +161,7 @@ export default function HomePage() {
                   COMMERCIAL & MULTI-UNIT
                 </h2>
                 <p className="mt-3" style={{ color: '#A39E93' }}>
-                  Scalable production for apartments, hotels, and multi-family projects. 40-person production facility.
+                  Scalable production for apartments, hotels, and multi-family projects. Full-scale production facility.
                 </p>
                 <Link
                   to="/commercial"
