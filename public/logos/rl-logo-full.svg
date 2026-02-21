@@ -1,15 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 130" width="400" height="130">
   <defs>
     <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#E2C873;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#C9A84C;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#A88A3D;stop-opacity:1" />
+      <stop offset="0%" stop-color="#E2C873" stop-opacity="1" />
+      <stop offset="50%" stop-color="#C9A84C" stop-opacity="1" />
+      <stop offset="100%" stop-color="#A88A3D" stop-opacity="1" />
     </linearGradient>
     <linearGradient id="goldLine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#A88A3D;stop-opacity:0" />
-      <stop offset="15%" style="stop-color:#C9A84C;stop-opacity:1" />
-      <stop offset="85%" style="stop-color:#C9A84C;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#A88A3D;stop-opacity:0" />
+      <stop offset="0%" stop-color="#A88A3D" stop-opacity="0" />
+      <stop offset="15%" stop-color="#C9A84C" stop-opacity="1" />
+      <stop offset="85%" stop-color="#C9A84C" stop-opacity="1" />
+      <stop offset="100%" stop-color="#A88A3D" stop-opacity="0" />
     </linearGradient>
   </defs>
   <g transform="translate(175, 2)" opacity="0.5">
@@ -17,10 +18,10 @@
     <rect x="6" y="5" width="38" height="20" rx="1" fill="none" stroke="#C9A84C" stroke-width="0.8"/>
     <circle cx="40" cy="15" r="1.5" fill="#C9A84C"/>
   </g>
-  <text x="200" y="68" text-anchor="middle" font-family="'Playfair Display', Georgia, 'Times New Roman', serif" font-size="52" font-weight="700" letter-spacing="8" fill="url(#goldGrad)">R&amp;L</text>
+  <text x="200" y="68" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-size="52" font-weight="700" letter-spacing="8" fill="url(#goldGrad)">R&#38;L</text>
   <line x1="70" y1="82" x2="170" y2="82" stroke="url(#goldLine)" stroke-width="0.8"/>
   <polygon points="200,79 203,82 200,85 197,82" fill="#C9A84C" opacity="0.8"/>
   <line x1="230" y1="82" x2="330" y2="82" stroke="url(#goldLine)" stroke-width="0.8"/>
-  <text x="200" y="104" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="15" font-weight="400" letter-spacing="10" fill="#F5F0E8">CUSTOM CABINETS</text>
-  <text x="200" y="124" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="8" font-weight="300" letter-spacing="4" fill="#A39E93">HANDCRAFTED EXCELLENCE · ROOTED IN TRADITION</text>
+  <text x="200" y="104" text-anchor="middle" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="15" font-weight="400" letter-spacing="10" fill="#F5F0E8">CUSTOM CABINETS</text>
+  <text x="200" y="124" text-anchor="middle" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="8" font-weight="300" letter-spacing="4" fill="#A39E93">HANDCRAFTED EXCELLENCE &#183; ROOTED IN TRADITION</text>
 </svg>

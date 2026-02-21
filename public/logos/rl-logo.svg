@@ -1,20 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" width="400" height="120">
   <defs>
     <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#E2C873;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#C9A84C;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#A88A3D;stop-opacity:1" />
+      <stop offset="0%" stop-color="#E2C873" stop-opacity="1" />
+      <stop offset="50%" stop-color="#C9A84C" stop-opacity="1" />
+      <stop offset="100%" stop-color="#A88A3D" stop-opacity="1" />
     </linearGradient>
     <linearGradient id="goldLine" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" style="stop-color:#A88A3D;stop-opacity:0" />
-      <stop offset="20%" style="stop-color:#C9A84C;stop-opacity:1" />
-      <stop offset="80%" style="stop-color:#C9A84C;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#A88A3D;stop-opacity:0" />
+      <stop offset="0%" stop-color="#A88A3D" stop-opacity="0" />
+      <stop offset="20%" stop-color="#C9A84C" stop-opacity="1" />
+      <stop offset="80%" stop-color="#C9A84C" stop-opacity="1" />
+      <stop offset="100%" stop-color="#A88A3D" stop-opacity="0" />
     </linearGradient>
   </defs>
-  <text x="200" y="58" text-anchor="middle" font-family="'Playfair Display', Georgia, 'Times New Roman', serif" font-size="56" font-weight="700" letter-spacing="8" fill="url(#goldGrad)">R&amp;L</text>
+  <text x="200" y="58" text-anchor="middle" font-family="Playfair Display, Georgia, serif" font-size="56" font-weight="700" letter-spacing="8" fill="url(#goldGrad)">R&#38;L</text>
   <line x1="60" y1="72" x2="340" y2="72" stroke="url(#goldLine)" stroke-width="1"/>
-  <text x="200" y="95" text-anchor="middle" font-family="'Inter', 'Helvetica Neue', Arial, sans-serif" font-size="16" font-weight="400" letter-spacing="10" fill="#F5F0E8">CUSTOM CABINETS</text>
+  <text x="200" y="95" text-anchor="middle" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="16" font-weight="400" letter-spacing="10" fill="#F5F0E8">CUSTOM CABINETS</text>
   <polygon points="45,72 50,67 55,72 50,77" fill="#C9A84C" opacity="0.8"/>
   <polygon points="345,72 350,67 355,72 350,77" fill="#C9A84C" opacity="0.8"/>
 </svg>
