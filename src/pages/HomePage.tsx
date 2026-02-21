@@ -77,7 +77,7 @@ export default function HomePage() {
           animate="visible"
           className="relative z-10 max-w-4xl"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 130" className="h-20 md:h-28 lg:h-32 mx-auto mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 130" className="h-28 sm:h-32 md:h-40 lg:h-48 mx-auto mb-6">
           <defs>
             <linearGradient id="heroGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
               <stop offset="0%" stopColor="#E2C873" stopOpacity={1} />
