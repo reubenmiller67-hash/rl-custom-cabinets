@@ -20,7 +20,7 @@ export default function AboutPage() {
             className="font-heading text-4xl font-semibold md:text-5xl"
             style={{ color: '#F5F0E8' }}
           >
-            Handcrafted Excellence from Bronson, Michigan
+            Handcrafted Excellence from Southern Michigan
           </motion.h1>
         </div>
       </section>
@@ -34,7 +34,7 @@ export default function AboutPage() {
             className="font-heading text-2xl font-semibold"
             style={{ color: '#C9A84C' }}
           >
-            Our Story
+            Built on Tradition. Driven by Quality.
           </motion.h2>
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -44,10 +44,13 @@ export default function AboutPage() {
             style={{ color: '#A39E93' }}
           >
             <p>
-              R&L Custom Cabinets is a high-end custom cabinetry company based in Bronson, Michigan. We combine traditional craftsmanship with modern production capacity — a 40-person facility that can handle everything from one-of-a-kind residential projects to large commercial and multi-unit builds.
+              R&L Custom Cabinets was founded on the woodworking traditions of Southern Michigan, where craftsmanship is more than a skill — it&apos;s a way of life. Our production team includes skilled artisans with deep roots in the region&apos;s woodworking heritage, bringing old-world attention to detail to every cabinet we build.
             </p>
             <p>
-              Our team believes in true custom: no stock sizes, no compromises. Every cabinet is built to your exact specifications, with attention to detail from the first design consultation to the final installation. We serve Southern Michigan and Northern Indiana with the same care whether you&apos;re remodeling a single kitchen or outfitting hundreds of units.
+              What sets us apart is simple: the owner is involved in every project from start to finish. From your very first phone call through design, production, and installation — you&apos;re working with the same person who stakes their name on the final result. No hand-offs, no runaround.
+            </p>
+            <p>
+              We believe a cabinet should be built the way it was meant to be — with quality materials, skilled hands, and an uncompromising commitment to getting every detail right. Whether it&apos;s a single custom kitchen or a 200-unit commercial project, that standard never changes.
             </p>
           </motion.div>
         </div>
@@ -62,7 +65,7 @@ export default function AboutPage() {
             className="font-heading text-2xl font-semibold"
             style={{ color: '#F5F0E8' }}
           >
-            Our Team
+            Meet the Owner
           </motion.h2>
           <motion.div
             initial={{ opacity: 0, y: 24 }}
@@ -75,10 +78,13 @@ export default function AboutPage() {
             </div>
             <div>
               <h3 className="font-heading text-xl font-semibold" style={{ color: '#C9A84C' }}>
-                Reuben
+                Reuben Miller
               </h3>
+              <p className="mt-1 text-sm" style={{ color: '#6B6560' }}>
+                Owner & Lead Designer
+              </p>
               <p className="mt-4" style={{ color: '#A39E93' }}>
-                Placeholder bio for Reuben — founder, lead designer, or key team member. This section will highlight experience, philosophy, and commitment to quality at R&L Custom Cabinets.
+                With roots in Southern Michigan&apos;s woodworking tradition, Reuben personally oversees every project from initial design through final installation. He leads the design process using professional 3D rendering software, so you can see your kitchen before a single board is cut.
               </p>
             </div>
           </motion.div>
@@ -94,7 +100,7 @@ export default function AboutPage() {
             className="font-heading text-2xl font-semibold"
             style={{ color: '#F5F0E8' }}
           >
-            Production Facility
+            Our Production Facility
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 16 }}
@@ -103,7 +109,7 @@ export default function AboutPage() {
             className="mt-6"
             style={{ color: '#A39E93' }}
           >
-            Our 40-person shop in Bronson is where design becomes reality. We use precision CNC equipment alongside hand finishing to deliver consistent, high-quality cabinetry at scale. Whether it&apos;s a single residential project or a phased commercial rollout, we have the capacity and the team to get it done.
+            Our full-scale production facility is equipped with both precision CNC technology and traditional handcraft capabilities. This combination allows us to deliver consistent, high-quality cabinetry at any scale — whether you need one custom kitchen or cabinetry for an entire apartment complex. Our team of skilled craftsmen brings decades of combined woodworking experience to every piece that leaves our shop.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 24 }}

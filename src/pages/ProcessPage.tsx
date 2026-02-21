@@ -5,15 +5,15 @@ import PlaceholderImage from '../components/ui/PlaceholderImage'
 const steps = [
   {
     title: 'Free Consultation',
-    desc: 'We start with a free in-home or virtual design consultation. We discuss your vision, take measurements, and understand how you use the space. No obligation.',
+    desc: 'Meet directly with the owner for a free in-home or virtual design consultation. We\'ll discuss your vision, take measurements, and start planning your project — no salespeople, no middlemen.',
   },
   {
     title: 'Design & Selection',
-    desc: 'You\'ll receive 3D renderings and work with us on material selection, door styles, and finishes. We make sure every detail matches your taste and budget.',
+    desc: 'Using professional 3D design software, we\'ll create detailed renderings of your project so you can see exactly what your space will look like. Select door styles, finishes, hardware, and countertops with confidence before we build a single cabinet.',
   },
   {
     title: 'Crafting',
-    desc: 'Your cabinets are built in our Bronson facility. We use precision CNC and hand finishing, with quality checkpoints at every stage.',
+    desc: 'Every cabinet is built in our full-scale production facility by skilled craftsmen with deep roots in the region\'s woodworking tradition. We combine precision CNC technology with traditional handcraft techniques, and every piece goes through rigorous quality checkpoints before it leaves our shop.',
   },
   {
     title: 'Installation',

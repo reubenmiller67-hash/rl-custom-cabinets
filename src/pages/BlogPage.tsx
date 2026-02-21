@@ -3,12 +3,15 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { collection, getDocs, query, orderBy } from 'firebase/firestore'
 import { db } from '../lib/firebase'
+import { getPublishedBlogPosts } from '../data/blogPosts'
 
 interface Post {
   id: string
   slug: string
   title: string
   excerpt?: string
+  date?: string
+  category?: string
   publishedAt?: { seconds: number }
 }
 
@@ -21,22 +24,37 @@ export default function BlogPage() {
       try {
         const q = query(collection(db, 'posts'), orderBy('publishedAt', 'desc'))
         const snap = await getDocs(q)
-        const list = snap.docs.map((doc) => {
-          const d = doc.data()
-          return {
-            id: doc.id,
-            slug: d.slug || doc.id,
-            title: d.title || 'Untitled',
-            excerpt: d.excerpt,
-            publishedAt: d.publishedAt,
-          }
-        })
-        setPosts(list)
+        if (!snap.empty) {
+          const list = snap.docs.map((doc) => {
+            const d = doc.data()
+            return {
+              id: doc.id,
+              slug: d.slug || doc.id,
+              title: d.title || 'Untitled',
+              excerpt: d.excerpt,
+              date: d.publishedAt ? new Date(d.publishedAt.seconds * 1000).toISOString().slice(0, 10) : undefined,
+              category: d.category,
+              publishedAt: d.publishedAt,
+            }
+          })
+          setPosts(list)
+          setLoading(false)
+          return
+        }
       } catch {
-        setPosts([])
-      } finally {
-        setLoading(false)
+        // fall through to local
       }
+      // Fallback to local data
+      const local = getPublishedBlogPosts().map((p) => ({
+        id: p.id,
+        slug: p.slug,
+        title: p.title,
+        excerpt: p.excerpt,
+        date: p.date,
+        category: p.category,
+      }))
+      setPosts(local)
+      setLoading(false)
     }
     load()
   }, [])
@@ -44,7 +62,7 @@ export default function BlogPage() {
   return (
     <div style={{ backgroundColor: '#0D0D0D' }}>
       <section className="px-4 py-16 md:px-6 md:py-24">
-        <div className="mx-auto max-w-4xl">
+        <div className="mx-auto max-w-6xl">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -78,7 +96,7 @@ export default function BlogPage() {
               </p>
             </motion.div>
           ) : (
-            <div className="mt-12 space-y-8">
+            <div className="mt-12 grid gap-8 sm:grid-cols-2">
               {posts.map((post, i) => (
                 <motion.article
                   key={post.id}
@@ -94,14 +112,25 @@ export default function BlogPage() {
                     <h2 className="font-heading text-xl font-semibold" style={{ color: '#F5F0E8' }}>
                       {post.title}
                     </h2>
-                    {post.publishedAt && (
+                    {post.date && (
                       <p className="mt-2 text-sm" style={{ color: '#6B6560' }}>
-                        {new Date(post.publishedAt.seconds * 1000).toLocaleDateString()}
+                        {new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
                       </p>
                     )}
-                    {post.excerpt && (
-                      <p className="mt-3 text-sm" style={{ color: '#A39E93' }}>{post.excerpt}</p>
+                    {post.category && (
+                      <span className="mt-2 inline-block text-xs font-medium" style={{ color: '#C9A84C' }}>
+                        {post.category}
+                      </span>
                     )}
+                    {post.excerpt && (
+                      <p className="mt-3 text-sm line-clamp-3" style={{ color: '#A39E93' }}>
+                        {post.excerpt.slice(0, 150)}
+                        {post.excerpt.length > 150 ? '…' : ''}
+                      </p>
+                    )}
+                    <span className="mt-4 inline-flex font-medium transition-colors hover:text-[#E2C873]" style={{ color: '#C9A84C' }}>
+                      Read More →
+                    </span>
                   </Link>
                 </motion.article>
               ))}

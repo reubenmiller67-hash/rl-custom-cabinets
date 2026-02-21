@@ -34,10 +34,10 @@ export default function Footer() {
               </span>
             </Link>
             <p className="mt-3 text-sm" style={{ color: '#A39E93' }}>
-              Handcrafted Excellence Since 2020
+              Handcrafted Excellence. Rooted in Tradition.
             </p>
             <p className="mt-2 text-sm" style={{ color: '#A39E93' }}>
-              Bronson, Michigan
+              Serving Southern Michigan & Northern Indiana
             </p>
             <p className="mt-1 text-sm" style={{ color: '#6B6560' }}>
               (XXX) XXX-XXXX

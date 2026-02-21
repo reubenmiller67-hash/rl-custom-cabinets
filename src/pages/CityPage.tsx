@@ -42,7 +42,7 @@ export default function CityPage() {
             {city.description}
           </motion.p>
           <p className="mt-4 text-sm" style={{ color: '#C9A84C' }}>
-            Approximately {city.distance} from our Bronson facility
+            Proudly serving {city.name} and the surrounding area
           </p>
         </div>
       </section>

@@ -62,10 +62,10 @@ export default function ContactPage() {
               </h2>
               <p className="mt-4" style={{ color: '#A39E93' }}>
                 R&L Custom Cabinets<br />
-                Bronson, Michigan
+                Southern Michigan
               </p>
               <p className="mt-2" style={{ color: '#6B6560' }}>
-                Address placeholder — Bronson, MI
+                Serving Southern Michigan & Northern Indiana
               </p>
               <p className="mt-4" style={{ color: '#6B6560' }}>
                 Phone: (XXX) XXX-XXXX

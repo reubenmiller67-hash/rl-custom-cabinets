@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import PlaceholderImage from '../components/ui/PlaceholderImage'
 
-const stats = ['40-Person Facility', 'XX+ Projects Completed', 'On-Time Delivery']
+const stats = ['Full-Scale Production Facility', 'XX+ Projects Completed', 'On-Time Delivery']
 
 const serviceCards = [
   { id: 'apartments', title: 'Apartments & Multi-Family', desc: 'Consistent, durable cabinetry for units at scale. Phased delivery and installation.' },
@@ -33,7 +33,7 @@ export default function CommercialPage() {
             className="mt-6 text-lg"
             style={{ color: '#A39E93' }}
           >
-            Scalable production with consistent quality. Backed by a 40-person production facility.
+            Scalable production with consistent quality. Backed by our full-scale in-house production facility.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 16 }}
@@ -107,7 +107,7 @@ export default function CommercialPage() {
             className="mt-6"
             style={{ color: '#A39E93' }}
           >
-            Our 40-person shop in Bronson gives us the capacity to handle large multi-unit and commercial projects without sacrificing the custom quality we&apos;re known for. We work with developers, property managers, and general contractors to deliver on schedule and on spec. From shop drawings to phased delivery and installation, one team owns your project.
+            Our in-house production facility is equipped to handle projects of any scale. Whether you need cabinetry for a 20-unit apartment building or a 500-room hotel, we have the capacity, the craftsmen, and the systems to deliver consistent quality on your timeline.
           </motion.p>
         </div>
       </section>

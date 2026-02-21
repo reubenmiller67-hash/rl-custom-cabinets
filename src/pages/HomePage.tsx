@@ -30,7 +30,7 @@ const featuredProjects = [
 const processSteps = [
   { title: 'Consultation', desc: 'Free in-home or virtual design consultation' },
   { title: 'Design', desc: '3D renderings and material selection' },
-  { title: 'Build', desc: 'Precision crafted in our 40-person facility' },
+  { title: 'Build', desc: 'Precision crafted in our full-scale facility' },
   { title: 'Install', desc: 'Professional installation by our team' },
   { title: 'Enjoy', desc: 'Your dream space, built to last generations' },
 ]
@@ -42,10 +42,10 @@ const testimonials = [
 ]
 
 const whyCards = [
-  { icon: FiCheckSquare, title: 'True Custom', desc: 'Every cabinet built to your exact specifications. No stock sizes, no compromises.' },
-  { icon: FiUsers, title: '40-Person Production', desc: 'Large-scale capacity with small-shop attention to detail.' },
+  { icon: FiCheckSquare, title: 'Rooted in Tradition', desc: 'Our craftsmen bring generations of woodworking expertise to every project. Old-world attention to detail, built for modern living.' },
+  { icon: FiUsers, title: 'Full-Scale Production', desc: 'Our in-house production facility is equipped to handle projects of any size — from a single custom kitchen to hundreds of commercial units.' },
   { icon: FiMapPin, title: 'Serving Southern Michigan', desc: 'Kalamazoo, Battle Creek, South Bend, Grand Rapids and beyond.' },
-  { icon: FiTool, title: 'Design to Installation', desc: 'One team handles your project from first sketch to final installation.' },
+  { icon: FiTool, title: 'Owner-Led, Start to Finish', desc: 'From your first call to final installation, the owner is personally involved in every step of your project.' },
 ]
 
 const serviceCities = [

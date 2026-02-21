@@ -22,7 +22,7 @@ function CityGrid({ slugs, title }: { slugs: string[]; title: string }) {
             style={{ backgroundColor: '#242424', borderColor: '#333333' }}
           >
             <p className="font-medium" style={{ color: '#F5F0E8' }}>{city.name}, {city.state}</p>
-            <p className="mt-1 text-sm" style={{ color: '#6B6560' }}>{city.distance} from Bronson</p>
+            <p className="mt-1 text-sm" style={{ color: '#6B6560' }}>In the heart of Southern Michigan</p>
           </Link>
         ))}
       </div>

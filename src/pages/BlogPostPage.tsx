@@ -3,10 +3,20 @@ import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { collection, getDocs, query, where } from 'firebase/firestore'
 import { db } from '../lib/firebase'
+import { getBlogPostBySlug } from '../data/blogPosts'
+
+interface PostData {
+  title: string
+  content?: string
+  author?: string
+  date?: string
+  category?: string
+  publishedAt?: { seconds: number }
+}
 
 export default function BlogPostPage() {
   const { slug } = useParams<{ slug: string }>()
-  const [post, setPost] = useState<{ title: string; content?: string; publishedAt?: { seconds: number } } | null>(null)
+  const [post, setPost] = useState<PostData | null>(null)
   const [loading, setLoading] = useState(true)
   const [notFound, setNotFound] = useState(false)
 
@@ -20,22 +30,36 @@ export default function BlogPostPage() {
       try {
         const q = query(collection(db, 'posts'), where('slug', '==', slug))
         const snap = await getDocs(q)
-        if (snap.empty) {
-          setNotFound(true)
-          setPost(null)
-        } else {
+        if (!snap.empty) {
           const doc = snap.docs[0]
+          const d = doc.data()
           setPost({
-            title: doc.data().title || 'Untitled',
-            content: doc.data().content,
-            publishedAt: doc.data().publishedAt,
+            title: d.title || 'Untitled',
+            content: d.content,
+            author: d.author,
+            date: d.publishedAt ? new Date(d.publishedAt.seconds * 1000).toISOString().slice(0, 10) : undefined,
+            category: d.category,
+            publishedAt: d.publishedAt,
           })
+          setLoading(false)
+          return
         }
       } catch {
-        setNotFound(true)
-      } finally {
-        setLoading(false)
+        // fall through to local
       }
+      const localPost = getBlogPostBySlug(slug)
+      if (localPost) {
+        setPost({
+          title: localPost.title,
+          content: localPost.content,
+          author: localPost.author,
+          date: localPost.date,
+          category: localPost.category,
+        })
+      } else {
+        setNotFound(true)
+      }
+      setLoading(false)
     }
     load()
   }, [slug])
@@ -79,11 +103,23 @@ export default function BlogPostPage() {
         >
           {post.title}
         </motion.h1>
-        {post.publishedAt && (
-          <p className="mt-4 text-sm" style={{ color: '#6B6560' }}>
-            {new Date(post.publishedAt.seconds * 1000).toLocaleDateString()}
-          </p>
-        )}
+        <div className="mt-4 flex flex-wrap items-center gap-3 text-sm" style={{ color: '#6B6560' }}>
+          {post.date && (
+            <span>{new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+          )}
+          {post.author && (
+            <>
+              {post.date && <span>·</span>}
+              <span>{post.author}</span>
+            </>
+          )}
+          {post.category && (
+            <>
+              <span>·</span>
+              <span style={{ color: '#C9A84C' }}>{post.category}</span>
+            </>
+          )}
+        </div>
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
@@ -92,18 +128,24 @@ export default function BlogPostPage() {
           style={{ color: '#A39E93' }}
         >
           {post.content ? (
-            <div dangerouslySetInnerHTML={{ __html: post.content }} />
+            <div
+              className="blog-content"
+              dangerouslySetInnerHTML={{ __html: post.content }}
+            />
           ) : (
             <p>No content yet.</p>
           )}
         </motion.div>
       </article>
 
-      <section className="border-t px-4 py-12 md:px-6" style={{ borderColor: '#333333', backgroundColor: '#1A1A1A' }}>
+      <section className="border-t px-4 py-16 md:px-6" style={{ borderColor: '#333333', backgroundColor: '#1A1A1A' }}>
         <div className="mx-auto max-w-3xl text-center">
+          <h2 className="font-heading text-2xl font-semibold" style={{ color: '#F5F0E8' }}>
+            Ready to Start Your Project?
+          </h2>
           <Link
             to="/quote"
-            className="inline-block rounded-lg px-8 py-3.5 font-medium transition-colors hover:opacity-90"
+            className="mt-6 inline-block rounded-lg px-8 py-3.5 font-medium transition-colors hover:opacity-90"
             style={{ backgroundColor: '#C9A84C', color: '#0D0D0D' }}
           >
             Get Your Free Quote
