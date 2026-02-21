@@ -28,6 +28,7 @@ const navLinks = [
   { label: 'Our Work', path: '/portfolio' },
   { label: 'About', path: '/about' },
   { label: 'Service Areas', path: '/service-areas' },
+  { label: 'Blog', path: '/blog' },
 ]
 
 export default function Navbar() {
