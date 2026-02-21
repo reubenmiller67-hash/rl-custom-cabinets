@@ -77,7 +77,32 @@ export default function HomePage() {
           animate="visible"
           className="relative z-10 max-w-4xl"
         >
-          <img src="/logos/rl-logo-full.svg" alt="R&L Custom Cabinets" className="mx-auto mb-4 h-20 md:h-28 lg:h-32" />
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 130" className="h-20 md:h-28 lg:h-32 mx-auto mb-4">
+          <defs>
+            <linearGradient id="heroGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stopColor="#E2C873" stopOpacity={1} />
+              <stop offset="50%" stopColor="#C9A84C" stopOpacity={1} />
+              <stop offset="100%" stopColor="#A88A3D" stopOpacity={1} />
+            </linearGradient>
+            <linearGradient id="heroGoldLine" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stopColor="#A88A3D" stopOpacity={0} />
+              <stop offset="15%" stopColor="#C9A84C" stopOpacity={1} />
+              <stop offset="85%" stopColor="#C9A84C" stopOpacity={1} />
+              <stop offset="100%" stopColor="#A88A3D" stopOpacity={0} />
+            </linearGradient>
+          </defs>
+          <g transform="translate(175, 2)" opacity={0.5}>
+            <rect x="0" y="0" width="50" height="30" rx="1" fill="none" stroke="#C9A84C" strokeWidth={1.2}/>
+            <rect x="6" y="5" width="38" height="20" rx="1" fill="none" stroke="#C9A84C" strokeWidth={0.8}/>
+            <circle cx="40" cy="15" r="1.5" fill="#C9A84C"/>
+          </g>
+          <text x="200" y="68" textAnchor="middle" fontFamily="Playfair Display, Georgia, serif" fontSize={52} fontWeight={700} letterSpacing={8} fill="url(#heroGoldGrad)">R&amp;L</text>
+          <line x1="70" y1="82" x2="170" y2="82" stroke="url(#heroGoldLine)" strokeWidth={0.8}/>
+          <polygon points="200,79 203,82 200,85 197,82" fill="#C9A84C" opacity={0.8}/>
+          <line x1="230" y1="82" x2="330" y2="82" stroke="url(#heroGoldLine)" strokeWidth={0.8}/>
+          <text x="200" y="104" textAnchor="middle" fontFamily="Inter, Helvetica Neue, Arial, sans-serif" fontSize={15} fontWeight={400} letterSpacing={10} fill="#F5F0E8">CUSTOM CABINETS</text>
+          <text x="200" y="124" textAnchor="middle" fontFamily="Inter, Helvetica Neue, Arial, sans-serif" fontSize={8} fontWeight={300} letterSpacing={4} fill="#A39E93">HANDCRAFTED EXCELLENCE &#183; ROOTED IN TRADITION</text>
+        </svg>
           <motion.h1
             variants={item}
             className="font-heading text-4xl font-bold leading-tight tracking-tight md:text-5xl lg:text-6xl"

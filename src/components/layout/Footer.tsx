@@ -27,7 +27,26 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-3">
           <div>
             <Link to="/" className="inline-block">
-              <img src="/logos/rl-logo.svg" alt="R&L Custom Cabinets" className="h-16 md:h-20" />
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" className="h-16 md:h-20 mx-auto md:mx-0" aria-label="R&amp;L Custom Cabinets">
+              <defs>
+                <linearGradient id="footerGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="#E2C873" stopOpacity={1} />
+                  <stop offset="50%" stopColor="#C9A84C" stopOpacity={1} />
+                  <stop offset="100%" stopColor="#A88A3D" stopOpacity={1} />
+                </linearGradient>
+                <linearGradient id="footerGoldLine" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stopColor="#A88A3D" stopOpacity={0} />
+                  <stop offset="20%" stopColor="#C9A84C" stopOpacity={1} />
+                  <stop offset="80%" stopColor="#C9A84C" stopOpacity={1} />
+                  <stop offset="100%" stopColor="#A88A3D" stopOpacity={0} />
+                </linearGradient>
+              </defs>
+              <text x="200" y="58" textAnchor="middle" fontFamily="Playfair Display, Georgia, serif" fontSize={56} fontWeight={700} letterSpacing={8} fill="url(#footerGoldGrad)">R&amp;L</text>
+              <line x1="60" y1="72" x2="340" y2="72" stroke="url(#footerGoldLine)" strokeWidth={1}/>
+              <text x="200" y="95" textAnchor="middle" fontFamily="Inter, Helvetica Neue, Arial, sans-serif" fontSize={16} fontWeight={400} letterSpacing={10} fill="#F5F0E8">CUSTOM CABINETS</text>
+              <polygon points="45,72 50,67 55,72 50,77" fill="#C9A84C" opacity={0.8}/>
+              <polygon points="345,72 350,67 355,72 350,77" fill="#C9A84C" opacity={0.8}/>
+            </svg>
             </Link>
             <p className="mt-3 text-sm" style={{ color: '#A39E93' }}>
               Handcrafted Excellence. Rooted in Tradition.
